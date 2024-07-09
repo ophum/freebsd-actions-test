@@ -52,7 +52,7 @@ jobs:
         operating_system: freebsd
         architecture: ${{ matrix.os.arch }}
         version: '${{ matrix.os.version }}'
-        image_url: https://github.com/ophum/freebsd-builder/releases/download/untagged-d41abceab152472143b8/freebsd-${{ matrix.os.version }}-${{ matrix.os.arch }}.qcow2
+        image_url: https://github.com/ophum/freebsd-builder/releases/download/v0.0.1/freebsd-${{ matrix.os.version }}-${{ matrix.os.arch }}.qcow2
         run: |
           uname -a
 
