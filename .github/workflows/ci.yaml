@@ -1,0 +1,21 @@
+name: Test 11.2 Custom Image 
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Test
+      uses: cross-platform-actions/action@v0.23.0
+      with:
+        operating_system: freebsd
+        version: '11.2'
+        image_url: https://github.com/ophum/freebsd-actions-test/releases/download/images/freebsd-11.2-x86-64.qcow2
+        run: |
+          uname -a
+
