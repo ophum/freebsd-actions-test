@@ -13,37 +13,37 @@ jobs:
       matrix:
         os:
         - arch: x86-64
-          version: 11.2
+          version: '11.2'
         - arch: x86-64
-          version: 12.2
+          version: '12.2'
         - arch: x86-64
-          version: 12.4
+          version: '12.4'
         - arch: arm64
-          version: 12.4
+          version: '12.4'
         - arch: x86-64
-          version: 13.0
+          version: '13.0'
         - arch: arm64
-          version: 13.0
+          version: '13.0'
         - arch: x86-64
-          version: 13.1
+          version: '13.1'
         - arch: arm64
-          version: 13.1
+          version: '13.1'
         - arch: x86-64
-          version: 13.2
+          version: '13.2'
         - arch: arm64
-          version: 13.2
+          version: '13.2'
         - arch: x86-64
-          version: 13.3
+          version: '13.3'
         - arch: arm64
-          version: 13.3
+          version: '13.3'
         - arch: x86-64
-          version: 14.0
+          version: '14.0'
         - arch: arm64
-          version: 14.0
+          version: '14.0'
         - arch: x86-64
-          version: 14.1
+          version: '14.1'
         - arch: arm64
-          version: 14.1
+          version: '14.1'
     steps:
     - uses: actions/checkout@v4
     - name: Test on ${{ matrix.os.version }}-${{ matrix.os.arch }}
